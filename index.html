@@ -2,133 +2,107 @@
 <html lang="fr">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>CV - Djepie Dassi Merveille</title>
 
-<style>
-@page {
-  size: A4;
-  margin: 0;
-}
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
+<style>
 body {
   margin: 0;
-  font-family: 'Segoe UI', Arial, sans-serif;
-  background: #f5f3f4;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background: #ffffff;
+  font-family: 'Poppins', sans-serif;
 }
 
-/* PAGE */
+/* CV container */
 .cv {
   width: 210mm;
   height: 297mm;
   display: flex;
   background: white;
+  margin: 0 auto;
 }
 
-/* SIDEBAR */
-.sidebar {
+/* LEFT SIDE */
+.left {
   width: 35%;
-  background: #8E6C88; /* couleur féminine */
+  background: #b07a94;
   color: white;
-  padding: 18px;
-  box-sizing: border-box;
-}
-
-.sidebar h1 {
-  font-size: 20px;
-  margin: 0;
-  text-transform: uppercase;
-}
-
-.sidebar h2 {
-  font-size: 12px;
-  margin: 4px 0 12px;
-  color: #F3EAEA;
-}
-
-.sidebar .section {
-  margin-bottom: 18px;
-}
-
-.sidebar h3 {
-  font-size: 12px;
-  text-transform: uppercase;
-  border-bottom: 1px solid #E8CFCB;
-  padding-bottom: 3px;
-  margin-bottom: 6px;
-}
-
-.sidebar p, .sidebar li {
-  font-size: 11px;
-  line-height: 1.4;
-}
-
-.sidebar ul {
-  padding-left: 14px;
-  margin: 0;
-}
-
-/* MAIN */
-.main {
-  width: 65%;
   padding: 20px;
-  box-sizing: border-box;
 }
 
-.main h3 {
+.left h1 {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.left h2 {
   font-size: 13px;
-  text-transform: uppercase;
-  border-bottom: 2px solid #8E6C88;
-  margin-bottom: 8px;
-  padding-bottom: 3px;
+  font-weight: 300;
+  margin-bottom: 20px;
 }
 
-.main p, .main li {
-  font-size: 11.5px;
-  line-height: 1.5;
+.section {
+  margin-bottom: 20px;
 }
 
-.main ul {
-  margin: 0;
-  padding-left: 14px;
-}
-
-/* HEADER */
-.header {
+.section h3 {
+  border-bottom: 1px solid white;
+  padding-bottom: 5px;
+  font-size: 13px;
   margin-bottom: 10px;
 }
 
-.name {
-  font-size: 22px;
-  font-weight: bold;
+.section p, .section li {
+  font-size: 12px;
+  line-height: 1.4;
 }
 
-.job {
-  font-size: 13px;
-  color: #555;
+ul {
+  padding-left: 15px;
+  margin: 0;
 }
 
-/* BLOCK */
-.block {
-  margin-bottom: 12px;
+/* RIGHT SIDE */
+.right {
+  width: 65%;
+  padding: 20px;
+  color: #333;
 }
 
-/* EXPERIENCE */
-.exp {
-  margin-bottom: 6px;
+.right h3 {
+  color: #b07a94;
+  border-bottom: 2px solid #b07a94;
+  padding-bottom: 5px;
+  font-size: 14px;
 }
 
-.exp strong {
-  display: block;
+.right p, .right li {
+  font-size: 12px;
+  line-height: 1.5;
 }
 
-.date {
-  font-size: 10px;
-  color: #777;
+/* RESPONSIVE (écran) */
+@media screen {
+  .cv {
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+  }
 }
 
-/* PRINT */
+/* PRINT A4 */
 @media print {
-  body { background: white; }
+  body {
+    margin: 0;
+  }
+  .cv {
+    width: 210mm;
+    height: 297mm;
+  }
 }
 </style>
 </head>
@@ -137,13 +111,13 @@ body {
 
 <div class="cv">
 
-  <!-- SIDEBAR -->
-  <div class="sidebar">
-    <h1>Djepie Dassi Merveille</h1>
+  <!-- LEFT -->
+  <div class="left">
+    <h1>DJEPie DASSI MERVEILLE</h1>
     <h2>Éducatrice spécialisée en formation</h2>
 
     <div class="section">
-      <h3>📞 Contact</h3>
+      <h3>CONTACT</h3>
       <p>Rue du Fort Mahon 21<br>7012 Jemappes</p>
       <p>Avenue Gustave Demey 232<br>1160 Auderghem</p>
       <p>+32 465 578 033</p>
@@ -151,7 +125,7 @@ body {
     </div>
 
     <div class="section">
-      <h3>💡 Compétences</h3>
+      <h3>COMPÉTENCES</h3>
       <ul>
         <li>Écoute active</li>
         <li>Travail en équipe</li>
@@ -161,12 +135,12 @@ body {
     </div>
 
     <div class="section">
-      <h3>💻 Informatique</h3>
+      <h3>INFORMATIQUE</h3>
       <p>Word – Excel – PowerPoint</p>
     </div>
 
     <div class="section">
-      <h3>⭐ Atouts</h3>
+      <h3>ATOUTS</h3>
       <ul>
         <li>Motivation</li>
         <li>Sens des responsabilités</li>
@@ -174,51 +148,35 @@ body {
         <li>Polyvalence</li>
       </ul>
     </div>
+
   </div>
 
-  <!-- MAIN -->
-  <div class="main">
+  <!-- RIGHT -->
+  <div class="right">
 
-    <div class="header">
-      <div class="name">Profil</div>
-      <div class="job">
-        Étudiante en éducatrice spécialisée, motivée à développer mes compétences
-        dans le secteur social. Sérieuse, dynamique et à l’écoute.
-      </div>
-    </div>
+    <h3>PROFIL</h3>
+    <p>
+      Étudiante en éducatrice spécialisée, motivée à développer mes compétences
+      dans le secteur social. Sérieuse, dynamique et à l’écoute.
+    </p>
 
-    <div class="block">
-      <h3>🎓 Formation</h3>
+    <h3>FORMATION</h3>
+    <ul>
+      <li>2025 – aujourd’hui : Éducatrice spécialisée (CPFB – IPFC)</li>
+      <li>2019 – 2020 : Secrétariat et informatique</li>
+      <li>2019 – 2020 : Bachelor Degree</li>
+      <li>2018 – 2019 : Higher National Diploma</li>
+    </ul>
 
-      <div class="exp">
-        <strong>Éducatrice spécialisée (CPFB – IPFC)</strong>
-        <div class="date">2025 – aujourd’hui</div>
-      </div>
-
-      <div class="exp">2019 – 2020 : Secrétariat & informatique</div>
-      <div class="exp">2019 – 2020 : Bachelor Degree</div>
-      <div class="exp">2018 – 2019 : Higher National Diploma</div>
-    </div>
-
-    <div class="block">
-      <h3>💼 Expérience</h3>
-
-      <div class="exp">
-        <strong>Stage – Casa Hestia</strong>
-        <div class="date">Septembre – Décembre 2025</div>
-      </div>
-
-      <div class="exp">
-        <strong>Stage – Institution handicap</strong>
-        <div class="date">Janvier – Mars 2026</div>
-        <p>Accompagnement quotidien, activités éducatives et soutien individualisé.</p>
-      </div>
-
-      <div class="exp">Serveuse – Touch Down</div>
-      <div class="exp">Employée polyvalente – O’Tacos</div>
-      <div class="exp">Caissière – Delhaize</div>
-      <div class="exp">Préparatrice de commandes – Colruyt</div>
-    </div>
+    <h3>EXPÉRIENCE</h3>
+    <ul>
+      <li><strong>Stage – Casa Hestia</strong> (2025)</li>
+      <li><strong>Stage – Institution pour personnes en situation de handicap</strong> (2026)</li>
+      <li>Serveuse – Touch Down</li>
+      <li>Employée polyvalente – O’Tacos</li>
+      <li>Caissière – Delhaize</li>
+      <li>Préparatrice de commandes – Colruyt</li>
+    </ul>
 
   </div>
 
